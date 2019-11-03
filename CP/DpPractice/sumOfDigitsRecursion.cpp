@@ -17,9 +17,8 @@ int sumOfDigits(int number){
 
   return number % 10 + sumOfDigits(number/10);
 }
+
 int main(){
-
-
     cout<<sumOfDigits(1234)<<endl;
     cout<<sumOfDigits(123456)<<endl;
     cout<<sumOfDigits(11)<<endl;
