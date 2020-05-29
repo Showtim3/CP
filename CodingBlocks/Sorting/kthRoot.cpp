@@ -1,16 +1,12 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
@@ -18,8 +14,14 @@ int main(){
 
     int t;
     cin>>t;
-
+    lli k,n;
     while(t--){
+      cin>>n>>k;
+      lli ans = log10(n)/k;
+      lli logN = log10(n);
+      cout<<"Log is"<<logN<<endl;
+      ans=pow(10,ans);
+      cout<<ans<<endl;
 
     }
   return 0;

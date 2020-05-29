@@ -2,7 +2,6 @@
 #include <set>
 #include <map>
 #include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -10,17 +9,18 @@
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
-    }
+    int a,b;
+    cin>>a>>b;
+    int x = max(a,b);
+    int success = 6-x+1;
+    int g= __gcd(success, 6);
+    success/=g;
+    int total = 6/g;
+    cout<<success<<"/"<<total<<endl;
   return 0;
 }

@@ -16,11 +16,23 @@ using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
+  vector<vector<int> > arr;
+  vector<int> v1;
+  v1.push_back(0);
+  v1.push_back(0);
+  v1.push_back(1);
+  arr.push_back(v1);
+  vector<int> v2;
+  v1.push_back(0);
+  v1.push_back(0);
+  v1.push_back(0);
+  arr.push_back(v2);
+  vector<int> v3;
+  v1.push_back(0);
+  v1.push_back(0);
+  v1.push_back(1);
+  arr.push_back(v3);
+  cout<<"Hello"<<endl;
 
-    while(t--){
-
-    }
   return 0;
 }

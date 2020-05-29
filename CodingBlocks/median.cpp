@@ -1,26 +1,26 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    int n;
+    cin>>n;
+    vector<int> v;
+    int i,ele;
+    for(i=0;i<2*n;i++){
+      cin>>ele;
+      v.push_back(ele);
     }
+    sort(v.begin(),v.end());
+    cout<<v[n-1]<<endl;
   return 0;
 }

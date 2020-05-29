@@ -1,26 +1,28 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    int n1,n2;
+    int count=0;
+    cin>>n1>>n2;
+    int i=1;
+    while(count!=n1){
+      int term = (3*i)+2;
+      if(term%n2!=0){
+        cout<<term<<endl;
+        count++;
+      }
+      i++;
     }
   return 0;
 }

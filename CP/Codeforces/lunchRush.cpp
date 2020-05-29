@@ -15,12 +15,21 @@
 using namespace std;
 
 int main(){
-
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    fastio
+    lli n,k;
+    cin>>n>>k;
+    lli ans=INT_MIN;
+    while(n--){
+      lli a,b;
+      cin>>a>>b;
+      lli diff = k-b;
+      if(diff>=0){
+        ans = max(a, ans);
+      } else {
+        diff=a-(b-k);
+        ans = max(ans, diff);
+      }
     }
+    cout<<ans<<endl;
   return 0;
 }

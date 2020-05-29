@@ -1,26 +1,29 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
+int getSum(string s){
+  int sum=0;
+  int i=0;
+  while(i!=s.length()){
+    int digit = s[i]-'0';
+    sum+=digit;
+    i++;
+  }
+  return sum;
+}
 int main(){
+  string s;
+  cin>>s;
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
-    }
+  cout<<getSum(s)<<endl;
   return 0;
 }

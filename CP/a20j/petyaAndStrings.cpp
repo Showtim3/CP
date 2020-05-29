@@ -16,11 +16,20 @@ using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    string a,b;
+    cin>>a>>b;
+    transform(a.begin(), a.end(), a.begin(), ::toupper);
+    transform(b.begin(), b.end(), b.begin(), ::toupper);
+    int ans=0;
+    for(int i=0;i<a.length();i++){
+      if(a[i]<b[i]){
+        ans=-1;
+        break;
+      }
+      else if(a[i]>b[i]){
+        ans=1;break;
+      }
     }
+    cout<<ans<<endl;
   return 0;
 }

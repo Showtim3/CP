@@ -1,8 +1,6 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -10,17 +8,23 @@
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
+    int n,m;
+    cin>>n>>m;
+    int day=0;
+    while(true){
+      n--;
+      day++;
+      if(day%m==0){
+        n+=1;
+      }
 
-    while(t--){
-
+      if(n==0) break;
     }
+    cout<<day<<endl;
   return 0;
 }

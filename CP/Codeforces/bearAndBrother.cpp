@@ -1,26 +1,32 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
 
-    while(t--){
+    lli a,b;
+    cin>>a>>b;
 
+    if(a>=b){
+      cout<<1<<endl;
+    } else {
+        int itr=0;
+        while(a<=b){
+          a=a*3;
+          b=b*2;
+          itr++;
+        }
+        cout<<itr<<endl;
     }
+
   return 0;
 }

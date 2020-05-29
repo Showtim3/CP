@@ -1,8 +1,6 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -10,17 +8,22 @@
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
+lli getFactorial(lli n){
+  return (n == 1 || n == 0) ? 1 : getFactorial(n - 1) * n;
+}
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    lli n;
+    cin>>n;
+    lli ans;
+    if(n==1){
+      ans=1;
+    } else {
+        ans = (pow(3,n) + 5*n)/6;
     }
-  return 0;
+    cout<<ans<<endl;
+    return 0;
 }

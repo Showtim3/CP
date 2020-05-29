@@ -16,11 +16,22 @@ using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    int n;
+    cin>>n;
+    int i;
+    vector<int> v;
+    int sum=0;
+    v.resize(n);
+    for(i=0;i<n;i++){
+      cin>>v[i];
     }
+    sum=accumulate(v.begin(), v.end(), 0);
+    int ans=0;
+    for(auto x: v){
+      if((sum-x)%2==0){
+        ans++;
+      }
+    }
+    cout<<ans<<endl;
   return 0;
 }

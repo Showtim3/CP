@@ -1,18 +1,24 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
+
+int _calculatePower(int a,int b){
+  if(b<=0){
+    return 1;
+  }
+  return a*_calculatePower(a,b-1);
+}
+int calculatePower(int a,int b){
+  return _calculatePower(a,b);
+}
 
 int main(){
 
@@ -20,7 +26,9 @@ int main(){
     cin>>t;
 
     while(t--){
-
+      int a,b;
+      cin>>a>>b;
+      cout<<calculatePower(a,b)<<endl;
     }
   return 0;
 }

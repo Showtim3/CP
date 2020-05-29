@@ -1,26 +1,23 @@
 #include <iostream>
 #include <set>
 #include <map>
-#include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include <numeric>
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
+// __gcd(m, n)
 
 int main(){
+    int ans=1;
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+    for(int i=1;i<=10;i++){
+      ans = (((i * ans)) /
+               (__gcd(i, ans)));
     }
+    cout<<ans<<endl;
   return 0;
 }

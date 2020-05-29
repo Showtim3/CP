@@ -2,7 +2,6 @@
 #include <set>
 #include <map>
 #include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -10,7 +9,6 @@
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 using namespace std;
 
@@ -20,7 +18,13 @@ int main(){
     cin>>t;
 
     while(t--){
-
+      lli a,b,c,d;
+      cin>>a>>b>>c>>d;
+      lli first = b;
+      lli second = c;
+      lli third = c;
+      if(!third) third = c;
+      cout<<first<<" "<<second<<" "<<third<<endl;
     }
   return 0;
 }

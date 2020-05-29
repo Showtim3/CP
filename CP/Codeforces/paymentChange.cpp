@@ -20,7 +20,18 @@ int main(){
     cin>>t;
 
     while(t--){
+      int a,b,n,s;
+      cin>>a>>b>>n>>s;
+      int div = s/n;
+      if(div<=a){
+          s-=n*div;
+      }
+      else s-=n*a;
 
+      if(s<=b){
+        cout<<"yes"<<endl;
+      }
+      else cout<<"no"<<endl;
     }
   return 0;
 }

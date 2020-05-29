@@ -16,11 +16,16 @@ using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
-
-    while(t--){
-
+  string s;
+  cin>>s;
+  bool ans=0;
+  for(int i=0;i<s.length();i++){
+    if(s[i]=='H'||s[i]=='Q'||s[i]=='9'){
+      ans=1;
+      break;
     }
+  }
+  if(ans) cout<<"YES"<<endl;
+  else cout<<"NO"<<endl;
   return 0;
 }

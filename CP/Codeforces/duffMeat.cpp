@@ -2,7 +2,6 @@
 #include <set>
 #include <map>
 #include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -10,17 +9,23 @@
 #define li long int
 #define ll long long
 #define lli long long int
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
 using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
+    int n;
+    cin>>n;
 
-    while(t--){
-
+    while(n--){
+      int m,price;
+      cin>>m>>price;
+      vector<pair<int, int> > v;
+      v.push_back(make_pair(m, price));
     }
+    int totalMeat=0;
+    for(auto x: v){
+      totalMeat+=x.first;
+    }
+
   return 0;
 }

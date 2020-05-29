@@ -13,7 +13,7 @@
 #define lli long long int
 
 using namespace std;
-
+// 1 push_back
 int main(){
 
     int q;

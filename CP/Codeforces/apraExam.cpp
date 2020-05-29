@@ -2,7 +2,6 @@
 #include <set>
 #include <map>
 #include <queue>
-#include <climits>
 #include <vector>
 #include <algorithm>
 #include <cmath>
@@ -16,11 +15,13 @@ using namespace std;
 
 int main(){
 
-    int t;
-    cin>>t;
+    lli n;
+    cin>>n;
+    if(n==0) cout<<1<<endl;
+    else if(n%4==0) cout<<6<<endl;
+    else if((n-1)%4==0) cout<<8<<endl;
+    else if((n-2)%4==0) cout<<4<<endl;
+    else if((n-3)%4==0) cout<<2<<endl;
 
-    while(t--){
-
-    }
   return 0;
 }
